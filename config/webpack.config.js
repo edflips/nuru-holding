@@ -24,7 +24,7 @@ module.exports = {
     contentBase: path.join(config.root, config.paths.src),
     watchContentBase: true,
     hot: true,
-    open: true,
+    open: false,
     port: config.port,
     host: config.dev_host,
   },
