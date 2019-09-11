@@ -183,4 +183,23 @@ section {
       padding: 5%;
     }
   }
+
+  &.team {
+    .team-member {
+      line-height: 1.4;
+
+      h2 {
+        font-size: 22px;
+        display: inline-block;
+      }
+
+      img {
+        @include media-breakpoint-up(sm) {
+          border-radius: 100%;
+        }
+
+        max-width: 100%;
+      }
+    }
+  }
 }
