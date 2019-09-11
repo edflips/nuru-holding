@@ -15,27 +15,32 @@ document.addEventListener(
 );
 
 // jarallax
-// jarallaxVideo();
-// jarallaxElement();
 jarallax(document.querySelectorAll('.jarallax'), {
   speed: -0.2,
   disableParallax: /iPad|iPhone|iPod|Android/,
-  disableVideo: /iPad|iPhone|iPod|Android/,
 });
 
 
 // Scroll off top
 const headerNav = document.querySelector('header');
+const scrollTop = document.querySelector('a.scroll-top');
 let ticking = false;
 
 const handleScroll = () => {
   if (!ticking) {
     window.requestAnimationFrame(() => {
-      if (window.scrollY === 0) {
+      if (window.scrollY <= 50) {
         headerNav.classList.add('top');
       } else {
         headerNav.classList.remove('top');
       }
+
+      if (window.scrollY >= 1000) {
+        scrollTop.classList.add('on');
+      } else {
+        scrollTop.classList.remove('on');
+      }
+
       ticking = false;
     });
     ticking = true;
