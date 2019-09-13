@@ -175,7 +175,7 @@ section {
       margin-top: 2rem;
       max-width: 1200px;
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         padding: 5%;
         margin-top: 0;
       }
