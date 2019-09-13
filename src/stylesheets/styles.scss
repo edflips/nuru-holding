@@ -251,9 +251,15 @@ section {
       border-top-left-radius: 100%;
       border-top-right-radius: 100%;
       cursor: help;
+      margin-bottom: 120px;
 
       .title {
+        width: 100%;
         padding: 1rem 1rem 0;
+        position: absolute;
+        top: 100%;
+        z-index: 100;
+        transition: all 200ms ease-in-out;
 
         h2 {
           font-size: 22px;
@@ -263,11 +269,13 @@ section {
         p {
           font-size: 14px;
           text-align: center;
+          padding: 0 10px;
         }
       }
 
       .photo {
-        // padding: 10px;
+        position: relative;
+        z-index: 100;
 
         img {
           max-width: 100%;
@@ -277,7 +285,7 @@ section {
 
       .detail {
         position: absolute;
-        top: 100%;
+        top: 0;
         z-index: 0;
         padding: 1rem;
         opacity: 0;
@@ -291,11 +299,18 @@ section {
 
       &.on {
         background: #efefef;
-        z-index: 100;
+        z-index: 99;
+
+        .title {
+          top: 40%;
+          color: white;
+          h2 { color: white; }
+        }
 
         .detail {
+          top: 100%;
           background: #efefef;
-          z-index: 100;
+          z-index: 99;
           // max-height: 1000px;
           opacity: 1;
         }
