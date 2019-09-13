@@ -79,7 +79,7 @@ function toggleBio() {
 }
 
 members.forEach((member) => {
-  member.addEventListener('click', toggleBio);
+  member.addEventListener('touchstart', toggleBio);
   member.addEventListener('mouseover', revealBio);
   member.addEventListener('mouseout', hideBio);
 });
