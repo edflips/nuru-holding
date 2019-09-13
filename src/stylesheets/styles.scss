@@ -250,12 +250,13 @@ section {
       transition: all 200ms ease-in-out;
       border-top-left-radius: 100%;
       border-top-right-radius: 100%;
+      cursor: help;
 
       .title {
-        padding: 0 1rem;
+        padding: 1rem 1rem 0;
 
         h2 {
-          font-size: 20px;
+          font-size: 22px;
           text-align: center;
         }
 
