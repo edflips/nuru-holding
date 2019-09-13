@@ -11,4 +11,3 @@ Look at the package.json file for all of the scripts.
 ```bash
 npm start
  ```
- 
