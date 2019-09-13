@@ -20,7 +20,6 @@ jarallax(document.querySelectorAll('.jarallax'), {
   disableParallax: /iPad|iPhone|iPod|Android/,
 });
 
-
 // Scroll off top
 const headerNav = document.querySelector('header');
 const scrollTop = document.querySelector('a.scroll-top');
