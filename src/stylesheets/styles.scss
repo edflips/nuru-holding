@@ -230,19 +230,74 @@ section {
 
   &.team {
     .team-member {
-      line-height: 1.4;
+      // line-height: 1.4;
 
-      h2 {
-        font-size: 22px;
-        display: inline-block;
-      }
+      // h2 {
+      //   font-size: 22px;
+      //   display: inline-block;
+      // }
 
-      img {
-        @include media-breakpoint-up(sm) {
-          border-radius: 100%;
+      // img {
+      //   @include media-breakpoint-up(sm) {
+      //     border-radius: 100%;
+      //   }
+
+      //   max-width: 100%;
+      // }
+
+      position: relative;
+      z-index: 0;
+      transition: all 200ms ease-in-out;
+      border-top-left-radius: 100%;
+      border-top-right-radius: 100%;
+
+      .title {
+        padding: 0 1rem;
+
+        h2 {
+          font-size: 20px;
+          text-align: center;
         }
 
-        max-width: 100%;
+        p {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+
+      .photo {
+        // padding: 10px;
+
+        img {
+          max-width: 100%;
+          border-radius: 100%;
+        }
+      }
+
+      .detail {
+        position: absolute;
+        top: 100%;
+        z-index: 0;
+        padding: 1rem;
+        opacity: 0;
+        transition: all 200ms ease-in-out;
+
+        // max-height: 0;
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 1.3;
+      }
+
+      &.on {
+        background: #efefef;
+        z-index: 100;
+
+        .detail {
+          background: #efefef;
+          z-index: 100;
+          // max-height: 1000px;
+          opacity: 1;
+        }
       }
     }
   }

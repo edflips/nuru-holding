@@ -57,3 +57,29 @@ const straplines = [strapEn, strapFr];
 setInterval(() => {
   straplines.map((strapline) => strapline.classList.toggle('visible'));
 }, 4000);
+
+
+// Team member reveal
+const teamSection = document.querySelector('#team');
+const members = teamSection.querySelectorAll('.team-member');
+
+function revealBio() {
+  // const detail = this.querySelector('.detail');
+  this.classList.add('on');
+}
+
+function hideBio() {
+  // const detail = this.querySelector('.detail');
+  this.classList.remove('on');
+}
+
+function toggleBio() {
+  // const detail = this.querySelector('.detail');
+  this.classList.toggle('on');
+}
+
+members.forEach((member) => {
+  member.addEventListener('click', toggleBio);
+  member.addEventListener('mouseover', revealBio);
+  member.addEventListener('mouseout', hideBio);
+});
