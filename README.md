@@ -9,5 +9,7 @@ Based on the [static-site-boilerplate](https://opencollective.com/static-site-bo
 Look at the package.json file for all of the scripts.
 
 ```bash
-npm start
+npm start  // dev
+
+npm run build // build for production
  ```
