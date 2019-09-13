@@ -73,10 +73,10 @@ function hideBio() {
   this.classList.remove('on');
 }
 
-function toggleBio() {
-  // const detail = this.querySelector('.detail');
-  this.classList.toggle('on');
-}
+// function toggleBio() {
+//   // const detail = this.querySelector('.detail');
+//   this.classList.toggle('on');
+// }
 
 members.forEach((member) => {
   member.addEventListener('touchstart', revealBio);
