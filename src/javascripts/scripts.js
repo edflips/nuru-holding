@@ -60,27 +60,18 @@ setInterval(() => {
 
 
 // Team member reveal
-const teamSection = document.querySelector('#team');
-const members = teamSection.querySelectorAll('.team-member');
+const members = document.querySelectorAll('#team .team-member');
 
 function revealBio() {
-  // const detail = this.querySelector('.detail');
-  this.classList.add('on');
+  members.forEach((member) => {
+    if (this !== member) {
+      member.classList.remove('on');
+    } else {
+      this.classList.toggle('on');
+    }
+  });
 }
-
-function hideBio() {
-  // const detail = this.querySelector('.detail');
-  this.classList.remove('on');
-}
-
-// function toggleBio() {
-//   // const detail = this.querySelector('.detail');
-//   this.classList.toggle('on');
-// }
 
 members.forEach((member) => {
-  member.addEventListener('touchstart', revealBio);
-  member.addEventListener('touchend', hideBio);
-  member.addEventListener('mouseover', revealBio);
-  member.addEventListener('mouseout', hideBio);
+  member.addEventListener('click', revealBio);
 });
