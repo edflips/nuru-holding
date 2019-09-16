@@ -1,5 +1,5 @@
 import 'bootstrap';
-import objectFitImages from 'object-fit-images';
+import * as objectFitImages from 'object-fit-images';
 import { jarallax } from 'jarallax';
 import SweetScroll from 'sweet-scroll';
 
