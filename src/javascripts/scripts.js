@@ -1,6 +1,9 @@
 import 'bootstrap';
+import objectFitImages from 'object-fit-images';
 import { jarallax } from 'jarallax';
 import SweetScroll from 'sweet-scroll';
+
+objectFitImages();
 
 // sweet-scroll
 document.addEventListener(
