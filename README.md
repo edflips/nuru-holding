@@ -1,6 +1,6 @@
 # Nuru holding page
 
-> This is actually a single page site, but, heyho!
+> https://nuru.cd
 
 ## development
 
